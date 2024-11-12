@@ -1,0 +1,432 @@
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: white;
+}
+
+.bar{
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    z-index: 100;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+    background-color: white;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .12);
+
+}
+
+.logo{
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #222;
+    font-weight: 500;
+    margin: 0 20px;
+    text-decoration: none;
+    position: relative; 
+
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    background-color: red;  
+    transition: .3s;
+}
+
+a:hover{
+    color: red;
+}
+
+a:hover::after{
+width: 100%;
+}
+
+.ana{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8% 0;
+}
+
+.ana-slogan{
+    max-width: 630px;
+}
+
+.ana-slogan h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.ana-slogan h3{
+    font-size: 20px;
+    color: red;
+}
+
+.teklif{
+    background: red;
+    display: inline-block;
+    padding: 10px 28px;
+    border: 2px solid red;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.teklif:hover{
+color: red;
+background: transparent;
+}
+
+.ana-img{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    transform: rotate(45deg);
+    right: -7;
+}
+
+.ana-img .rhombus{
+position: absolute;
+width: 100%;
+height: 100%;
+background: #eaeaea;
+border: 25px solid red;
+box-shadow: -15px 15px 15px rgba(0, 0, 0, .2) ;
+}
+
+.rhombus img{
+    position: absolute;
+    max-width: 750px;
+    transform: rotate(-45deg);
+    top: 110px;
+    left: -250px;
+
+}
+
+.ana .cerceve {
+    position: absolute;
+    transform: rotate(45deg);
+    width: 700px;
+    height: 700px;
+    background: red;
+    bottom: -25%;
+    right: -25px;
+    z-index: -1;
+}
+
+/* hakkımızda */
+
+.hak{
+    text-align: center;
+    font-size: 20px;
+}
+
+.hak span{
+  font-weight: 600;
+  color: black;
+}
+
+.hak h2{
+    color: red;
+}
+
+.hakbas{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.hakbas2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hak-img{
+    overflow: hidden;
+    flex: 1;
+    margin-right: 40px;
+}
+
+.hak-img img{
+    display: block;
+    max-width: 75%;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.hak-yazı{
+    flex: 1;
+}
+
+.hak-yazı h2{
+    color: red;
+}
+
+.hak-yazı P{
+    color: #222;
+}
+
+/* vizyon misyon kartları */
+
+.sira{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.kart{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 1em;
+    transition: .3s ease;
+    transition: .5s;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .12);
+}
+
+.kart:hover{
+    transform: scale(1.10);
+    color: white;
+    background: red;
+
+}
+
+.icon-foto i{
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-foto{
+    background-color: red;
+    position: relative;
+    font-size: 25px;
+    height: 2.5em;
+    width: 2.5em;
+    margin: auto;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: .5s;
+}
+
+p{
+    color: #222;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03;
+}
+
+.kart h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #222;
+    margin: 1em 0;
+}
+
+.liste ul{
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03;
+    color: #222;
+}
+
+/* hizmetlerimiz */
+
+.services{
+    text-align: center;
+    font-size: 20px;
+}
+
+.services span{
+    font-weight: 600;
+    color: black;
+}
+
+.services h2{
+    color: red;
+}
+
+.lojistik-hizmet{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.lojistik-hizmet .kutu{
+ flex-basis: calc(50% - 2rem);
+height: 200px;
+position: relative;
+border-radius: 8px;
+overflow: hidden;
+}
+
+.lojistik-hizmet .kutu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.lojistik-hizmet .kutu img:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.lojistik-hizmet .kutu h2{
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    background: red;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* iletişim */
+
+.formbas{
+    text-align: center;
+    padding: 10px;
+}
+
+.formbas h1{
+    font-size: 30px;
+    color: red;
+}
+
+.formbas p{
+    font-size: 16px; 
+    color: #222;
+    margin-top: 10px;
+}
+
+.iletisim {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.form{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid red;
+    color: #222;
+    background: transparent;
+    font-size: 15px;
+}
+
+.form span{
+    height: 100%;
+    cursor: text;
+}
+
+button{
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    outline: none;
+    background: red;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .form{
+    flex-basis: 48%;
+}
+
+
+/* footer */
+
+.footer{
+    padding: 40px 0;
+    background-color: red;
+}
+
+.footer .sosyal{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #222;
+}
+
+.footer .sosyal a{
+    font-size: 24px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border: 2px solid white;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.footer .hak-sakli{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
